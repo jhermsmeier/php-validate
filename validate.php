@@ -12,8 +12,8 @@
      * Runs a bucnh of tests against given $data
      * with set $rules.
      * 
-     * Returns FALSE or an associative array of
-     * occured errors and (if set) their messages.
+     * Returns TRUE if the tests pass or an associative array of
+     * occured errors and (if set) their messages otherwise.
      * 
      * @param array $data 
      * @param array $rules 
