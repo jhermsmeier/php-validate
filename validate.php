@@ -23,7 +23,7 @@
       // test state
       $passed = TRUE;
       // holds occured errors
-      $errors = array();
+      $errors = [];
       // run test methods on given data
       foreach( $data as $field => &$value ) {
         // parse rules
@@ -51,7 +51,7 @@
      */
     protected static function parse( $rule ) {
       // output
-      $tests = array();
+      $tests = [];
       // split up the rule definition
       $parts = preg_split( '{(\s+[|]\s+)|([,]\s+)}', $rule );
       // the rule parsing regex
@@ -96,7 +96,7 @@
     public static function __callStatic( $method, $parameters ) {
       $class = __CLASS__."\\{$method}";
       return call_user_func_array(
-        array( $class, 'test' ),
+        [ $class, 'test' ],
         $parameters
       );
     }

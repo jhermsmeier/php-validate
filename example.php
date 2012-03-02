@@ -16,16 +16,16 @@
   $start = microtime( TRUE );
   
   $test = lib\validate::test(
-    array(
+    [
       'name'  => 'John',
       'nick'  => 'Dude',
       'email' => 'john.doe@gmail.com'
-    ),
-    array(
+    ],
+    [
       'name'  => 'required | between(2,20) | alpha, message: please specify a name',
       'nick'  => 'between(1,20) | alphanumeric',
       'email' => 'required | email, message: invalid email address'
-    )
+    ]
   );
   
   $time = microtime( TRUE );
