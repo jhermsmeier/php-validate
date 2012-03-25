@@ -10,18 +10,15 @@ Validate
 ```php
 <?php
   
-  $test = lib\validate::test(
-    [
-      'name'  => 'John',
-      'nick'  => 'JohnnyBoy',
-      'email' => 'john.doe@gmail.com'
-    ],
-    [
-      'name'  => 'required | between(2,20) | alpha, message: please specify a name',
-      'nick'  => 'between(1,20) | alphanumeric',
-      'email' => 'required | email, message: invalid email address'
-    ]
-  );
+  $test = lib\validate::test([
+    'name'  => 'John',
+    'nick'  => 'JohnnyBoy',
+    'email' => 'john.doe@gmail.com'
+  ],[
+    'name'  => 'required | between(2,20) | alpha, message: please specify a name',
+    'nick'  => 'between(1,20) | alphanumeric',
+    'email' => 'required | email, message: invalid email address'
+  ]);
   
 ?>
 ```
