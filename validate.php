@@ -9,7 +9,7 @@
   class validate {
     
     /**
-     * Runs a bucnh of tests against given $data
+     * Runs a bunch of tests against given $data
      * with set $rules.
      * 
      * Returns TRUE if the tests pass or an associative array of
