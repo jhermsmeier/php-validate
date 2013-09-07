@@ -4,7 +4,7 @@
     
     public static function test( $input ) {
       // strip formatting
-      $ISBN = preg_replace( '{[^0-9X]}', '', $ISBN );
+      $ISBN = preg_replace( '{[^0-9X]}', '', $input );
       // get length
       $length = strlen( $ISBN );
       // get the checksum
