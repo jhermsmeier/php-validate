@@ -2,7 +2,7 @@
   
   class ISSN {
     
-    public static function test( $input ) {
+    public static function test( $ISSN ) {
       // strip formatting
       $ISSN = preg_replace( '{[^0-9X]}', '', $ISSN );
       // get length
